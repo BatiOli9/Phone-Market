@@ -1,0 +1,46 @@
+.main-header { 
+    width: 100vw;
+}
+
+.top-header { 
+    position: relative;
+    width: 100%;
+    background-color: #262729;
+    height: 100px;
+}
+
+#logo {
+    position: absolute;
+    top: 25%;
+    font-size: 3em;
+    color: #f7cd11;
+    left: 5%;
+}
+
+.search {
+    position: relative;
+    width: 50%;
+    left: 25%;
+    height: 30px;
+    top: 35%;
+    border-radius: 6px;
+}
+
+#search-button {
+    position: absolute;
+    left: 68%;
+    top: 42%;
+}
+
+.options {
+    position: absolute;
+    left: 78%;
+    top: 41%;
+}
+
+#options-logo { 
+    margin-left: 15px;
+    font-size: 1em;
+    color: #1152f7;
+}
+
