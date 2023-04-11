@@ -1,0 +1,16 @@
+.banner {
+    width: 100vw;
+    position: relative;
+    display: flex;
+}
+
+.banner-img {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 1281px){
+    .banner {
+        visibility: hidden;
+    }
+}

@@ -15,6 +15,11 @@
     font-size: 3em;
     color: #f7cd11;
     left: 5%;
+    transition: 0.3s;
+}
+
+#logo:hover {
+    color: #1152f7;
 }
 
 .search {
@@ -42,5 +47,93 @@
     margin-left: 15px;
     font-size: 1em;
     color: #1152f7;
+    transition: 0.3s;
 }
 
+#options-logo:hover {
+    color: #f7cd11;
+}
+
+.bottom-header {
+    background-color: #f7cd11;
+    position: relative;
+    width: 100%;
+    height: 35px;
+}
+
+.lista-bottom-header {
+    visibility: hidden;
+}
+
+#burger-menu {
+    display: flex;
+    visibility: visible;
+    position: absolute;
+    left: 48%;
+    font-size: 1.3em;
+    color: #262729;
+    top: 20%;
+}
+
+@media  (min-width: 1281px){
+    .lista-bottom-header {
+        visibility: visible;
+        position: absolute;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    #burger-menu {
+        visibility: hidden;
+    }
+    .lista-item-header {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.1em;
+        margin-top: 8px;
+    }
+    .lista-item-header-a {
+        color: #262729;
+        transition: 0.3s;
+    }
+    .lista-item-header-a:hover {
+        color: #1152f7;
+    }
+    .bottom-header {
+        height: 40px;
+    }
+    .lista-bottom-header > li {
+        display: inline-block;
+    }
+    .submenu-header {
+        position: absolute;
+        background-color: #f7cd11;
+        padding: 10px;
+        display: none;
+        z-index: 3;
+        transition: 0.3s;
+    }
+    .submenu-header li {
+        display: block;
+        padding: 15px;
+        color: #262729;
+        transition: 0.3s;
+    }
+    .submenu-header li:hover {
+        color: #1152f7;
+    }
+    .lista-item-header:hover .submenu-header {
+        display: block;
+        transition: 0.3s;
+    }
+    .search {
+        height: 40px;
+        top: 30%;
+        width: 44%;
+        left: 26%;
+    }
+    #options-logo {
+        font-size: 1.3em;
+        margin-left: 40px;
+    }
+}

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head.ejs') %>
-<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/css/products.css">
 
     <body>
         <%- include("partials/header.ejs") %>
-            <%- include("partials/banner.ejs") %>
                 <main class="main">
-                    <h3 class="destacados-title">Productos Destacados:</h3>
-                    <section class="productos-destacados">
-                        <% productosDestacados.forEach(producto=> { %>
+                    <h3 class="titulo-productos">Todos los productos:</h3>
+                    <section class="productos">
+                        <% productos.forEach(producto=> { %>
                             <article class="producto">
                                 <a href="#">
                                     <img src="<%= producto.img %>" class="img-producto">

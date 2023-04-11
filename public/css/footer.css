@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    width: 100vw;
+    background-color: #262729;
+}
+
+.social-media {
+    text-align: center;
+}
+
+#social-logo {
+    padding: 15px;
+    font-size: 1.7em;
+    color: #f7cd11;
+    transition: 0.3s;
+}
+
+#social-logo:hover {
+    color: #1152f7;
+}
+
+.data-fiscal {
+    position: relative;
+    left: 37%;
+    width: 26%;
+    padding: 3%;
+}
+
+.copy {
+    color: #fff;
+}
+
+@media (min-width: 1281px) {
+    .data-fiscal {
+        width: 10%;
+        left: 45%;
+        padding: 1%;
+    }
+}
