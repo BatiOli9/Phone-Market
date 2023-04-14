@@ -5,7 +5,35 @@
 <body>
     <%- include("partials/header.ejs") %>
     <main class="main">
-        
+        <section class="producto">
+            <div class="img-div">
+                <img src="<%= producto.img %>" class="img">
+            </div>
+            <div class="div">
+                <p class="info">Nombre del producto:</p>
+                <h3 class="texto"><%= producto.nombre %><h3>
+            </div>
+            <div class="div">
+                <p class="info">Precio del producto:</p>
+                <h3 class="texto"><%= producto.precio %></h3>
+            </div>
+            <div class="div">
+                <p class="info">Color del producto:</p>
+                <h3 class="texto"><%= producto.color %></h3>
+            </div>
+            <div class="div">
+                <p class="info">Marca del producto:</p>
+                <h3 class="texto"><%= producto.marca %></h3>
+            </div>
+            <div class="div">
+                <p class="info">Almacentamiento del producto:</p>
+                <h3 class="texto"><%= producto.almacenamiento %></hh3>
+            </div>
+            <button class="button carrito"><a href="#" class="a">Agregar al carrito</a></button><br>
+            <button class="button agregar"><a href="#" class="a">Agregar un producto</a></button><br>
+            <button class="button editar"><a href="#" class="a">Editar producto</a></button><br>
+            <button class="button eliminar"><a href="#" class="a">Eliminar producto</a></button>
+        </section>
     </main>
     <%- include("partials/footer.ejs") %>
 </body>

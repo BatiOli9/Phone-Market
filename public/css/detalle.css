@@ -1,0 +1,39 @@
+.main {
+    width: 100vw;
+    position: relative;
+}
+
+.producto {
+    width: 100%;
+    position: relative;
+}
+
+.img {
+    position: relative;
+    right: 30px;
+}
+
+.info {
+    position: relative;
+    left: 3%;
+    color: black;
+}
+
+.texto {
+    position: relative;
+    left: 3%;
+    color: black;
+}
+
+.button {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: 25px;
+    padding-top: 3%;
+}
+
+.a {
+    position: relative;
+    bottom: 3%;
+}

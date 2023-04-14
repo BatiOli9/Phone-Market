@@ -1,0 +1,9 @@
+// Marcas
+
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('1', 'Apple');
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('2', 'Samsung');
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('3', 'Motorola');
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('4', 'Xiaomi');
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('5', 'JBL');
+INSERT INTO `phonemarket`.`marcas` (`id`, `marcas`) VALUES ('6', 'Beat');
+

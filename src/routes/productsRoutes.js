@@ -5,6 +5,6 @@ const router = express.Router();
 const productsController = require("../controllers/productsController");
 
 router.get('/products', productsController.products);
-router.get("/productoDetalle/:id/", productsController.productoDetalle);
+router.get("/detalleProducto/:id/", productsController.productoDetalle);
 
 module.exports = router;
