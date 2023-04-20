@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head.ejs') %>
-<link rel="stylesheet" href="/css/detalle.css">
-<body>
-    <%- include("partials/header.ejs") %>
-    <main class="main">
-        <section class="producto">
-            <div class="img-div">
-                <img src="<%= producto.img %>" class="img">
-            </div>
-            <div class="div">
-                <p class="info">Nombre del producto:</p>
-                <h3 class="texto"><%= producto.nombre %><h3>
-            </div>
-            <div class="div">
-                <p class="info">Precio del producto:</p>
-                <h3 class="texto"><%= producto.precio %></h3>
-            </div>
-            <div class="div">
-                <p class="info">Color del producto:</p>
-                <h3 class="texto"><%= producto.color %></h3>
-            </div>
-            <div class="div">
-                <p class="info">Marca del producto:</p>
-                <h3 class="texto"><%= producto.marca %></h3>
-            </div>
-            <div class="div">
-                <p class="info">Almacentamiento del producto:</p>
-                <h3 class="texto"><%= producto.almacenamiento %></hh3>
-            </div>
-            <button class="button carrito"><a href="#" class="a">Agregar al carrito</a></button><br>
-            <button class="button agregar"><a href="#" class="a">Agregar un producto</a></button><br>
-            <button class="button editar"><a href="#" class="a">Editar producto</a></button><br>
-            <button class="button eliminar"><a href="#" class="a">Eliminar producto</a></button>
-        </section>
-    </main>
-    <%- include("partials/footer.ejs") %>
-</body>
+    <link rel="stylesheet" href="/css/detalle.css">
+
+    <body>
+        <%- include("partials/header.ejs") %>
+            <main class="main">
+                <section class="producto">
+                    <section class="imgs">
+                    <div class="img-div">
+                        <img src="<%= producto.img %>" class="img">
+                    </div>
+                    </section>
+                    <section class="textos">
+                        <div class="div nombre">
+                            <p class="info">Nombre del producto:</p>
+                            <h3 class="texto">
+                                <%= producto.nombre %>
+                                    <h3>
+                        </div>
+                        <div class="div precio">
+                            <p class="info">Precio del producto:</p>
+                            <h3 class="texto">$<%= producto.precio %> ARS</h3>
+                        </div>
+                        <div class="div color">
+                            <p class="info">Color del producto:</p>
+                            <h3 class="texto">
+                                <%= producto.color %>
+                            </h3>
+                        </div>
+                        <div class="div marca">
+                            <p class="info">Marca del producto:</p>
+                            <h3 class="texto">
+                                <%= producto.marca %>
+                            </h3>
+                        </div>
+                        <div class="div almacenamiento">
+                            <p class="info">Almacentamiento del producto:</p>
+                            <h3 class="texto">
+                                <%= producto.almacenamiento %>
+                                    </hh3>
+                        </div>
+                    </section>
+                    <button class="button carrito">Agregar al carrito</button><br>
+                    <button class="button agregar"><a href="#" class="a">Agregar un producto</a></button><br>
+                    <button class="button editar"><a href="#" class="a">Editar producto</a></button><br>
+                    <button class="button eliminar"><a href="#" class="a">Eliminar producto</a></button>
+                </section>
+            </main>
+            <%- include("partials/footer.ejs") %>
+    </body>

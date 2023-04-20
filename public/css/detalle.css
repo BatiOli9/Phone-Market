@@ -29,11 +29,116 @@
     width: 90%;
     position: relative;
     left: 5%;
-    height: 25px;
-    padding-top: 3%;
+    height: 30px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1em;
+    border-radius: 4px;
+    font-weight: 800;
 }
 
 .a {
     position: relative;
-    bottom: 3%;
+    font-size: 1em;
+    color: #111;
+    font-weight: 800;
+}
+
+.div {
+    margin-top: 2%;
+}
+
+.buttonExtra {
+    position: relative;
+    text-align: center;
+}
+
+.carrito {
+    background-color: #f7cd11;
+}
+
+.agregar  {
+    background-color: #3498eb;
+}
+
+.editar {
+    background-color: #f7cd11;
+}
+
+.eliminar {
+    background-color: #ed1123;
+}
+
+@media (min-width: 1281px){
+    .img {
+        width: 30%;
+        left: 5%;
+    }
+    .div {
+        position: absolute;
+        margin-left: 40%;
+    }
+    .nombre {
+        bottom: 87%;
+    }
+    .precio {
+        bottom: 78%;
+        margin-left: 40.3%;
+    }
+    .color {
+        bottom: 69%;
+        margin-left: 40.3%;
+    }
+    .marca {
+        bottom: 60%;
+        margin-left: 40.3%;
+    }
+    .almacenamiento {
+        bottom: 51%;
+        margin-left: 40.3%;
+    }
+    .button {
+        margin-bottom: 1%;
+        margin-top: 1%;
+        width: 50%;
+        left: 40%;
+        height: 40px;
+    }
+    .a {
+        font-weight: 600;
+    }
+    .carrito {
+        transition: 0.3s;
+    }
+    .carrito:hover {
+        background-color: #111;
+        color: #fff ;
+    }
+    .agregar {
+        transition: 0.3s;
+    }
+    .agregar:hover {
+        background-color: #111;
+    }
+    .agregar:hover .a {
+        color: #fff;
+    }
+    .editar {
+        transition: 0.3s;
+    }
+    .editar:hover {
+        background-color: #111;
+    }
+    .editar:hover .a {
+        color: #fff;
+    }
+    .eliminar {
+        transition: 0.3s;
+    }
+    .eliminar:hover {
+        background-color: #111;
+    }
+    .eliminar:hover .a {
+        color: #fff;
+    }
 }
